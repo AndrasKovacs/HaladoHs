@@ -14,4 +14,4 @@ Email: kovacsandras@inf.elte.hu
 
 #### Jegyzetek és egyéb anyagok
 
-Minden óra után csinálok jegyzetet az órán elhangzotakkról. Ezeket és a gyakorló (vagy pluszpontos) feladatokat várhatóan a gyakorlat után napon felteszem ide.
+Minden óra után csinálok jegyzetet az órán elhangzotakkról. Ezeket és a gyakorló (vagy pluszpontos) feladatokat várhatóan a gyakorlat utáni napon felteszem ide.
