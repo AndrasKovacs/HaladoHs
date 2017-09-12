@@ -64,7 +64,7 @@ Egy másik stratégia az, hogy kiindulunk a lehető legegyszerűbb absztrakt sz�
 
 Viszont! Nem igaz, hogy a helyesség alapvetően fontosabb, mint a sebesség; néha a sebesség kritikus, néha a helyesség kritikus, néha pedig az kritikus, hogy minél gyorsabban össze lehessen ütni egy prototípust. Ideális esetben olyan nyelvben szeretnénk programozni, ami gyorsabb, helyesebb, magasabb szintű és rugalmasabb mint bármilyen jelenleg használt nyelv. Realisztikus, hogy ilyen nyelv a jövőben elérhető lesz. A szoftvertechnológia abszolút gyerekcipőben jár az ~50 éves történelmével; valószínű, hogy 50 év múlva radikálisan máshogy fog kinézni, mint ma. A trade-off-ok valószínűleg léteznek és fundamentálisak, de még bőven lehetséges minden kritériumban jobbat alkotni. Jelenlegi példa: a Rust nyelvnek reális esélye van arra, hogy nagyjából olyan gyors legyen, mint a C++, a többi jellemzőn viszont lényegesen javítson.
 
-## Haskell: Algebrai adattípusok
+## Haskell: algebrai adattípusok
 
 Új típusokat létrehozására alapvető az ADT (algebraic data type) deklaráció. Az "algebrai" jelentésére később visszatérünk; a lényeg, hogy kis számú primitív típusból indulunk ki, és kis számú művelet segítségével új típusokat hozunk létre a meglévőkből. A következőkben négy típusképzési módszert tárgyalunk: tuple-képzést, unió-képzést, paraméterezést és rekurzív típusdefiniálást. Mind a négy része az általános ADT deklaráció sémájának.
 
@@ -235,6 +235,16 @@ Példa:
 ```haskell
 > map' (+10) list3
 Cons 110 (Cons 210 (Cons 310 Nil))
+```
+#### Mitől "algebrai" az ADT?
+
+A válasz: a tuple- és unió-képzésre nagyon egyszerű algebrai képlet van, ami megadja, hogy az új típusnak hány lehetséges értéke van a komponens típusoktól függően.
+
+A tuple-képzésnél összeszorozzuk a mezők lehetséges értékeinek a számát, és így megkapjuk a tuple lehetséges értékeinek a számát. Például: `Pair Bool Bool`-nak négy, azaz 2\*2 lehetséges értéke van, `Pair Int Int`-nek pedig 2^64 * 2^64 lehetséges értéke van 64 bites rendszeren. A formula működik mező nélküli konstruktorra is: nulla darab szám szorzata a matematikában 1, tehát például `data NoFields = NoFields` lehetséges értékeinek a száma szintén 1 (`NoFields` konstans).
+
+Az unió-képzésnél összeadjuk a lehetséges értékek számát, azaz `Either Bool (Either Bool Bool)` lehetséges értékeinek száma 2 + 2 + 2 = 6. Itt is működik az üres eset, megadhatjuk ugyanis a konstruktor nélküli típust Haskell-ben, aminek 0 darab értéke van. A matematikában pedig 0 darab szám összege 0.
+```haskell
+data Empty  -- nincs konstruktor
 ```
 ---
 ### Gyakorlatok
