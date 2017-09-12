@@ -240,19 +240,27 @@ Cons 110 (Cons 210 (Cons 310 Nil))
 ### Gyakorlatok
 
 **1.1**
+
 Definiáljuk a leveles bináris fák típusát. A fa leveleinél értékek találhatók, az elágazások pedig két részfát tartalmaznak.
+
 **1.2**
+
 Definiáljuk a függvényt, ami tükröz egy leveles bináris fát, azaz az új fában a bal és jobb részfákat megcseréljük.
+
 **1.3**
+
 Definiáljuk az új `List` típusra a `foldr'` és `foldl'` függvényeket. Példa a `foldr'` és `foldl'` működésére:
 ```haskell
 foldr' f z (Cons a (Cons b (Cons c Nil))) = f a (f b (f c z))
 foldl' f z (Cons a (Cons b (Cons c Nil))) = f (f (f z a) b) c
 ```
+
 **1.4**
+
 Implementáljuk a `sum' :: List Int -> Int` függvényt. Használjunk tail rekurziót.
 
 **1.5 Bónusz pontért**
+
 Implementáljuk a `foldl'` függvényt a `foldr'` függvény segítségével. A megoldásban kizárólag egy darab `foldr'` alkalmazásra lesz szükség.
 
 
