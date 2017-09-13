@@ -240,7 +240,7 @@ Cons 110 (Cons 210 (Cons 310 Nil))
 
 A válasz: a tuple- és unió-képzésre nagyon egyszerű algebrai képlet van, ami megadja, hogy az új típusnak hány lehetséges értéke van a komponens típusoktól függően.
 
-A tuple-képzésnél összeszorozzuk a mezők lehetséges értékeinek a számát, és így megkapjuk a tuple lehetséges értékeinek a számát. Például: `Pair Bool Bool`-nak négy, azaz 2\*2 lehetséges értéke van, `Pair Int Int`-nek pedig 2^64 * 2^64 lehetséges értéke van 64 bites rendszeren. A formula működik mező nélküli konstruktorra is: nulla darab szám szorzata a matematikában 1, tehát például `data NoFields = NoFields` lehetséges értékeinek a száma szintén 1 (`NoFields` konstans).
+A tuple-képzésnél összeszorozzuk a mezők lehetséges értékeinek a számát, és így megkapjuk a tuple lehetséges értékeinek a számát. Például: `Pair Bool Bool`-nak négy, azaz 2\*2 lehetséges értéke van, `Pair Int Int`-nek pedig 2^64 * 2^64 lehetséges értéke van 64 bites rendszeren. A formula működik mező nélküli konstruktorra is: nulla darab szám szorzata a matematikában 1, tehát például `data NoFields = NoFields` lehetséges értékeinek a száma szintén 1 (a `NoFields` konstans).
 
 Az unió-képzésnél összeadjuk a lehetséges értékek számát, azaz `Either Bool (Either Bool Bool)` lehetséges értékeinek száma 2 + 2 + 2 = 6. Itt is működik az üres eset, megadhatjuk ugyanis a konstruktor nélküli típust Haskell-ben, aminek 0 darab értéke van. A matematikában pedig 0 darab szám összege 0.
 ```haskell
