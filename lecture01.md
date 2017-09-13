@@ -106,8 +106,7 @@ foo _                   = 0
 A fenti függvényben két minta van. Az illesztés szemantikája a következő: felülről lefelé haladunk, és az első illeszkedő minta esetén visszaadjuk az egyenlőség jobb oldalán található kifejezést. Tehát ebben az esetben, ha az első mező `10`, visszaadunk `20`-at, egyébként pedig `0`-t.
 
 Alternatív illesztési szintaxis a következő:
-
-```
+```haskell
 foo :: IntAndBool -> Int
 foo x = case x of
   MkIntAndBool 10 _ -> 20
