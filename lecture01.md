@@ -215,7 +215,7 @@ data List a = Nil | Cons a (List a)
 Egy lista tartalmazhat bármilyen elemet, tehát paraméteres. Lehet egy lista üres, ez a `Nil` konstruktor, vagy pedig nemüres, ez pedig a `Cons`. Ez utóbbi tartalmaz egy `a` értéket, és a lista hátralevő részét, azaz a "farkát".
 
 Az így definiált lista típus pontosan ugyanúgy viseledik, mint a standard Haskell lista típus. A különbség pusztán az, hogy a standard listára van szintaktikus cukor (pl. `[0, 1, 2, 3]`), míg a saját listánkra nincsen, azaz csak a deklarált konstruktorokat használhatjuk (és rájuk illeszthetünk mintát). Példa:
-```
+```haskell
 list1 :: List Bool
 list1 = Cons True (Cons False Nil)
 
