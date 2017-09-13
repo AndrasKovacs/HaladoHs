@@ -168,7 +168,7 @@ GHCi-ben a következő történik:
 > missingCase (TwoInts 10 10)
 *** Exception: <interactive>:6:1-27: Non-exhaustive patterns in function missingCase
 ```
-Azaz kapunk egy csúnya kivételt. Az ilyen függvényeket "parciális" hívjuk, és a használatuk kerülendő. Ha egy `.hs` fájl tetejére a következőt mellékeljük
+Azaz kapunk egy csúnya kivételt. Az ilyen függvényeket "parciális"-nak hívjuk, és a használatuk kerülendő. Ha egy `.hs` fájl tetejére a következőt mellékeljük
 ```haskell
 {-# options_ghc -fwarn-incomplete-patterns #-}
 ```
