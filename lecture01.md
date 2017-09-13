@@ -58,7 +58,7 @@ Továbbá, a Haskell alapból nem tekinti hatásnak a memória-allokációt, aza
 
 A programozási nyelvek tervezesénél bizonyos előnyöket szeretnénk megvalósítani, pl. gyorsaság, helyesség, biztonság, absztrakció, rugalmasság. Ezek között bizonyos trade-off-ok vannak. 
 
-Egy lehetséges stratégia programozási nyelv tervezésére az, hogy a gépi kódból indulunk ki, és azt próbáljuk strukturálni és absztrahálni. Historikusan így jöttek létre az első gyakorlati programozási nyelvek. Ennek az az előnye, hogy a gépi kód "közelsége" miatt könnyű gyors kódot generálni. A hátrány viszont az, hogy a gépi kód bonyolultságából több minden marad transzparens a nyelvben, és ez a helyeségbizonyítást (vagy csak egyszerűen: helyes program írását) nagyban nehezíti.
+Egy lehetséges stratégia programozási nyelv tervezésére az, hogy a gépi kódból indulunk ki, és azt próbáljuk strukturálni és absztrahálni. Historikusan így jöttek létre az első gyakorlati programozási nyelvek. Ennek az az előnye, hogy a gépi kód "közelsége" miatt könnyű gyors kódot generálni. A hátrány viszont az, hogy a gépi kód bonyolultságából több minden marad transzparens a nyelvben, és ez a helyességbizonyítást (vagy csak egyszerűen: helyes program írását) nagyban nehezíti.
 
 Egy másik stratégia az, hogy kiindulunk a lehető legegyszerűbb absztrakt számítási modell-ből, és ezt próbáljuk kiegészíteni gyakorlati feature-ökkel, és ebből próbálunk hatékony gépi kódot generálni. A matematikában a számítások hagyományos leírása a függvény, a (kiszámítható) függvények legegyszerűbb használható realizációi pedig a típusos lambda kalkulusok. A tiszta függvények helyessége könnyen bizonyítható, mivel output-juk kizárólag az input-tól függ, és használható az ún. egyenlőségi érvelés, amikor definíciókat szabadon behelyettesíthetünk az előfordulásuk helyén. A hátrány itt az, hogy nagy a fogalmi távolság a gépi kód és a nyelv között, ezért nehezebb gyors programot írni és gyors kódot generálni, illetve nehezebb a bonyolult és "piszkos" gyakorlati fogalmakat (kivételek, IO, mutáció, stb.) organikusan integrálni a nyelvbe. A Haskell ezt a tervezési filozófiát követi.
 
@@ -66,7 +66,7 @@ Viszont! Nem igaz, hogy a helyesség alapvetően fontosabb, mint a sebesség; n�
 
 ## Haskell: algebrai adattípusok
 
-Új típusokat létrehozására alapvető az ADT (algebraic data type) deklaráció. Az "algebrai" jelentésére később visszatérünk; a lényeg, hogy kis számú primitív típusból indulunk ki, és kis számú művelet segítségével új típusokat hozunk létre a meglévőkből. A következőkben négy típusképzési módszert tárgyalunk: tuple-képzést, unió-képzést, paraméterezést és rekurzív típusdefiniálást. Mind a négy része az általános ADT deklaráció sémájának.
+Új típusok létrehozására alapvető az ADT (algebraic data type) deklaráció. Az "algebrai" jelentésére később visszatérünk; a lényeg, hogy kis számú primitív típusból indulunk ki, és kis számú művelet segítségével új típusokat hozunk létre a meglévőkből. A következőkben négy típusképzési módszert tárgyalunk: tuple-képzést, unió-képzést, paraméterezést és rekurzív típusdefiniálást. Mind a négy része az általános ADT deklaráció sémájának.
 
 #### Tuple-képzés
 
@@ -126,7 +126,7 @@ Itt `NullaryCon` lényegében egy konstans érték `Nullary` típussal.
 
 #### Unió-képzés
 
-Lehetőség van egy adattípushoz több különböző konstruktort adni. Emlékezzünk, hogy lehetséges mezők nélküli konstruktort megadni. Ha több ilyen konstruktor adunk egy típushoz, akkor lényegében reprodukáljuk más nyelvekből ismerős "enum"-okat.
+Lehetőség van egy adattípushoz több különböző konstruktort adni. Emlékezzünk, hogy lehetséges mezők nélküli konstruktort megadni. Ha több ilyen konstruktor adunk egy típushoz, akkor lényegében reprodukáljuk a más nyelvekből ismerős "enum"-okat.
 ```haskell
 data Direction = South | North | West | East
 ```
