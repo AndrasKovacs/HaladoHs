@@ -9,7 +9,8 @@ Email: kovacsandras@inf.elte.hu
 #### Követelmények:
 
 - Vizsgaidőszakban lesz egy géptermi vizsga. Ennek a tételes tematikáját a második héten közzéteszem ebben a repóban.
-- Kötelező beadandó nincs, de előadásokon kiadok majd (nehéz) feladatokat, amelyek helyes megoldásáért vizsgán +1 pont jár. A megoldásokat az email címemre lehet küldeni.
+- Kötelező beadandó nincs, de előadásokon kiadok feladatokat, amelyek helyes megoldásáért vizsgán +1 pont jár. 
+  Ezek a [BonusExercises](/BonusExercises) dokumentumban vannak/lesznek felsorolva. A megoldásokat az email címemre lehet küldeni. *Minden megoldáshoz kérek rövid magyarázatot*. 
 
 #### Jegyzetek és egyéb anyagok
 
