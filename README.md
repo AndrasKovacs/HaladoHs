@@ -1,4 +1,4 @@
-### 2017 ősz "Haladó Haskell" (IKP-9203) tárgy anyagai
+### 2018 tavasz "Haladó Haskell" (IKP-9203) tárgy anyagai
 
 #### Oktató elérhetősége:
 
@@ -8,10 +8,10 @@ Email: kovacsandras@inf.elte.hu
 
 #### Követelmények:
 
-- Az előadásokat látogatni nem kötelező.
-- Vizsgaidőszakban lesz egy géptermi vizsga.
-- Minden órán vagy óra után kiírok ajánlott feladatokat. Ezek teljesítése opcionális, a többségük egyszerű, és az anyag megértését segítik. Lesz viszont néhány trükkös feladat, ezekért plusz pont jár a vizsgán, és a megoldásokat az e-mail címemre lehet majd küldeni.
+- Vizsgaidőszakban lesz egy géptermi vizsga. Ennek a tételes tematikáját a második héten közzéteszem ebben a repóban.
+- Kötelező beadandó nincs, de előadásokon kiadok majd (nehéz) feladatokat, amelyek helyes megoldásáért vizsgán +1 pont jár. A megoldásokat az email címemre lehet küldeni.
 
 #### Jegyzetek és egyéb anyagok
 
-Minden óra után csinálok jegyzetet az órán elhangzotakkról. Ezeket és a gyakorló (vagy pluszpontos) feladatokat várhatóan a gyakorlat utáni napon felteszem ide.
+A "lectureNotes" könyvtárba kerülnek előadásokhoz kapcsolódó jegyzetek, illetve hivatkozások
+további interneten elérhető anyagokra. Ezt a félév során igyekszem bővíteni.
