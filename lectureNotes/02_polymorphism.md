@@ -9,7 +9,7 @@ GHC 8-ra vagy újabb fordítóra lesz szükségünk. Először is, mellékeljük
    {-# language RankNTypes, TypeApplications #-}
 ```
 
-ghci-ben is kapcsoljuk be ezeket a következőképpen: `:set -XRankNTypes -XTypeApplications`.
+ghci-ben is kapcsoljuk be ezeket a következőképpen: `:set -XRankNTypes -XTypeApplications`. Az összes lehetséges ilyen opció dokumentációjához [itt találhatunk táblázatot](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/flags.html#language-options).
 
 Vegyük a jól ismert identitás függvényt:
 
