@@ -268,8 +268,5 @@ foldl' f z (Cons a (Cons b (Cons c Nil))) = f (f (f z a) b) c
 
 Implementáljuk a `sum' :: List Int -> Int` függvényt. Használjunk tail rekurziót.
 
-**1.5 Bónusz pontért**
-
-Implementáljuk a `foldl'` függvényt a `foldr'` függvény segítségével. A megoldásban kizárólag egy darab `foldr'` alkalmazásra lesz szükség.
 
 
