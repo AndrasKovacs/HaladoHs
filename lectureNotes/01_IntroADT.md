@@ -1,5 +1,4 @@
 
-# 1. előadás
 ## Bevezető
 
 A kurzus a Haskell programozási nyelvet tárgyalja, illetve releváns funkcionális programozási fogalmakat. A követelmények és egyéb információk a [README](README.md) fájlban olvashatók.
