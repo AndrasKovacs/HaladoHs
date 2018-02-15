@@ -65,6 +65,22 @@ Paraméteres ADT definícióknál jellemzően a konstruktorok polimorfak lesznek
     (,) @Int :: Int -> b -> (Int, b)
     (,) @Bool @Bool :: Bool -> Bool -> (Bool, Bool)
 ```
+
+### Általános `forall` függvények inputjában 
+
+Ha bekapcsoljuk a `RankNTypes` opciót, akkor tetszés szerint használhatunk `forall` típusparamétereket függvénytípusok belsejében. Azaz nem csak típusparaméteres függvényt írhatunk, hanem olyan függvényeket is, amelyeknek inputjai típusparaméteres függvények. Például:
+
+```haskell
+    fun :: (forall a. a -> a) -> (Int, Bool) -> (Int, Bool)
+    fun f (n, b) = (f n, f b)
+```
+
+A fenti példában a `fun` inputja egy olyan függvény, aminek a típusa ugyanaz, mint az `id` identitásfüggvényé. Tehát a `fun` definíciójában `f`-et akármilyen típusú inputokra alkalmazhatjuk - itt `Int`-en és `Bool`-on demonstráljuk ezt. Ha kiírjuk a `@`-kat, akkor talán világosabb a helyzet:
+
+```haskell
+    fun :: (forall a. a -> a) -> (Int, Bool) -> (Int, Bool)
+    fun f (n, b) = (f @Int n, f @Bool b)
+```
     
     
 
