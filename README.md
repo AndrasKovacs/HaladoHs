@@ -13,5 +13,5 @@ Email: kovacsandras@inf.elte.hu
 
 #### Jegyzetek és egyéb anyagok
 
-A "lectureNotes" könyvtárba kerülnek előadásokhoz kapcsolódó jegyzetek, illetve hivatkozások
+A [lectureNotes](/lectureNotes) könyvtárba kerülnek előadásokhoz kapcsolódó jegyzetek, illetve hivatkozások
 további interneten elérhető anyagokra. Ezt a félév során igyekszem bővíteni.
