@@ -82,5 +82,20 @@ A fenti példában a `fun` inputja egy olyan függvény, aminek a típusa ugyana
     fun f (n, b) = (f @Int n, f @Bool b)
 ```
     
+---
+### Gyakorlatok
+
+**1**
+
+Hány féle lehetséges értéke van a következő típusoknak (kivétel-dobás és végtelen rekurzió nélküli (totális) értékekre gondoljunk csak):
+
+- `forall a. a -> a`
+- `forall a b. a -> b -> a`
+- `forall a. a -> a -> a`
+- `forall a. (a -> a) -> a -> a`
+
+**2**
+
+Legyenek `a` és `b` tetszőleges típusok. Legyen `t` a következő típus: `forall r. (a -> r) -> (b -> r) -> r`. Írjunk egy `encode :: Either a b -> t` és egy `decode :: t -> Either a b` függvényt. Informálisan mutassuk meg, hogy a két függvény bijekciót alkot.
     
 
