@@ -244,6 +244,8 @@ Az unió-képzésnél összeadjuk a lehetséges értékek számát, azaz `Either
 ```haskell
 data Empty  -- nincs konstruktor
 ```
+Szintén van képlet a függvényekre is: `a -> b` típus lehetséges értékeinek a száma `|b|^|a|`-val egyenlő, ahol a `^` a hatványozás, a két argumentum pedig az input és output típusok értékeinek száma. A "hatványhalmaz" kifejezés ebből a képletből származik, hiszen `a` hatványhalmazának a mérete `2^|a|`, és ebből az is látszik, hogy a hatványhalmaz reprezentálható `f :: a -> Bool` függvényekkel is, ahol `{x | x ∈ A ∧ f x = True}` a részhalmaz kódolása.
+
 ---
 ### Gyakorlatok
 
