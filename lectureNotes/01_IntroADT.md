@@ -249,7 +249,7 @@ Szintén van képlet a függvényekre is: `a -> b` típus lehetséges értékein
 ---
 ### Gyakorlatok
 
-**1.1**
+**1**
 
 Definiáljuk a leveles bináris fák típusát. A fa leveleinél értékek találhatók, az elágazások pedig két részfát tartalmaznak.
 
@@ -257,7 +257,7 @@ Definiáljuk a függvényt, ami listában visszaadja a fában levő értékeket.
 
 Definiáljuk a függvényt, ami tükröz egy fát, azaz az új fában a bal és jobb részfákat megcseréljük.
 
-**1.2**
+**2**
 
 Definiáljuk az új `List` típusra a `foldr'` és `foldl'` függvényeket. Példa a `foldr'` és `foldl'` működésére:
 ```haskell
