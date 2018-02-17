@@ -87,7 +87,7 @@ A fenti példában a `fun` inputja egy olyan függvény, aminek a típusa ugyana
 
 **1**
 
-Hányféle lehetséges értékei vannak a következő típusoknak (kivétel-dobás és végtelen rekurzió nélküli (totális) értékekre gondoljunk csak):
+Hányféle lehetséges értékei vannak a következő típusoknak (kivétel-dobás és végtelen rekurzió nélküli (totális) értékekre gondoljunk csak)?
 
 - `forall a. a -> a`
 - `forall a b. a -> b -> a`
@@ -96,6 +96,6 @@ Hányféle lehetséges értékei vannak a következő típusoknak (kivétel-dob�
 
 **2**
 
-Legyenek `a` és `b` tetszőleges típusok. Legyen `t` a következő típus: `forall r. (a -> r) -> (b -> r) -> r`. Írjunk egy `encode :: Either a b -> t` és egy `decode :: t -> Either a b` függvényt. Informálisan mutassuk meg, hogy a két függvény bijekciót alkot.
+Legyenek `a` és `b` tetszőleges típusok. Legyen `t` a következő típus: `forall r. (a -> r) -> (b -> r) -> r`. Írjunk egy `encode :: Either a b -> t` és egy `decode :: t -> Either a b` függvényt.
     
 
