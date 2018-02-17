@@ -87,7 +87,7 @@ A fenti példában a `fun` inputja egy olyan függvény, aminek a típusa ugyana
 
 **1**
 
-Hány féle lehetséges értéke van a következő típusoknak (kivétel-dobás és végtelen rekurzió nélküli (totális) értékekre gondoljunk csak):
+Hányféle lehetséges értékei vannak a következő típusoknak (kivétel-dobás és végtelen rekurzió nélküli (totális) értékekre gondoljunk csak):
 
 - `forall a. a -> a`
 - `forall a b. a -> b -> a`
