@@ -1,5 +1,4 @@
 
-# 1. előadás
 ## Bevezető
 
 A kurzus a Haskell programozási nyelvet tárgyalja, illetve releváns funkcionális programozási fogalmakat. A követelmények és egyéb információk a [README](README.md) fájlban olvashatók.
@@ -245,31 +244,30 @@ Az unió-képzésnél összeadjuk a lehetséges értékek számát, azaz `Either
 ```haskell
 data Empty  -- nincs konstruktor
 ```
+Szintén van képlet a függvényekre is: `a -> b` típus lehetséges értékeinek a száma `|b|^|a|`-val egyenlő, ahol a `^` a hatványozás, a két argumentum pedig az input és output típusok értékeinek száma. A "hatványhalmaz" kifejezés ebből a képletből származik, hiszen `a` hatványhalmazának a mérete `2^|a|`, és ebből az is látszik, hogy a hatványhalmaz reprezentálható `f :: a -> Bool` függvényekkel is, ahol `{x | x ∈ A ∧ f x = True}` a részhalmaz kódolása.
+
 ---
 ### Gyakorlatok
 
-**1.1**
+**1**
 
 Definiáljuk a leveles bináris fák típusát. A fa leveleinél értékek találhatók, az elágazások pedig két részfát tartalmaznak.
 
-**1.2**
+Definiáljuk a függvényt, ami listában visszaadja a fában levő értékeket.
 
-Definiáljuk a függvényt, ami tükröz egy leveles bináris fát, azaz az új fában a bal és jobb részfákat megcseréljük.
+Definiáljuk a függvényt, ami tükröz egy fát, azaz az új fában a bal és jobb részfákat megcseréljük.
 
-**1.3**
+**2**
 
 Definiáljuk az új `List` típusra a `foldr'` és `foldl'` függvényeket. Példa a `foldr'` és `foldl'` működésére:
 ```haskell
 foldr' f z (Cons a (Cons b (Cons c Nil))) = f a (f b (f c z))
 foldl' f z (Cons a (Cons b (Cons c Nil))) = f (f (f z a) b) c
 ```
+Implementáljuk a `sum' :: List Int -> Int` függvényt tail rekurzióval vagy `foldl'` segítségével.
 
-**1.4**
 
-Implementáljuk a `sum' :: List Int -> Int` függvényt. Használjunk tail rekurziót.
 
-**1.5 Bónusz pontért**
 
-Implementáljuk a `foldl'` függvényt a `foldr'` függvény segítségével. A megoldásban kizárólag egy darab `foldr'` alkalmazásra lesz szükség.
 
 
