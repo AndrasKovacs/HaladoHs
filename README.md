@@ -13,5 +13,9 @@ Email: kovacsandras@inf.elte.hu
 
 #### Jegyzetek és egyéb anyagok
 
-A "lectureNotes" könyvtárba kerülnek előadásokhoz kapcsolódó jegyzetek, illetve hivatkozások
+A "materials" könyvtárba kerülnek előadásokhoz kapcsolódó jegyzetek, illetve hivatkozások
 további interneten elérhető anyagokra. Ezt a félév során igyekszem bővíteni.
+
+A "lectureNotes" könytárba azok a konkrét Haskell fájlok kerülnek,
+amiket előadás közben írok jegyzetként. Ezek nem kifejezetten
+strukturáltak.
