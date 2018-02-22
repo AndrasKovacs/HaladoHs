@@ -18,6 +18,6 @@ A [materials](/materials) könyvtárba kerülnek előadásokhoz kapcsolódó
 jegyzetek, illetve hivatkozások további interneten elérhető
 anyagokra. Ezt a félév során igyekszem bővíteni.
 
-A [lectureNotes](/lectureNotes)] könytárba azok a konkrét Haskell fájlok kerülnek,
+A [lectureNotes](/lectureNotes) könytárba azok a konkrét Haskell fájlok kerülnek,
 amiket előadás közben írok jegyzetként. Ezek nem kifejezetten
 strukturáltak.
