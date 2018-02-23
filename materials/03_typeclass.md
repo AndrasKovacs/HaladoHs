@@ -23,7 +23,7 @@ A gyakorlatban jelenleg nem reális, hogy a programokat kiadjuk az automatikus k
 - Nem tudjuk vagy nem akarjuk formálisan specifikálni az implementációt. Megfelelő specifikáció nélkül az automatikus keresés haszontalan random programokat fog generálni; az elégséges specifikáció azonban költséges és szakértelmet igényel.
 - Szinte minden nem-triviális esetben túl nagy a keresési tér.
 
-A típusosztályok a fenti két problémát kezelik azzal, hogy *megszorítják* a keresést. Visszatérve a példánkhoz:
+A type class-ok a fenti két problémát kezelik azzal, hogy *megszorítják* a keresést. Visszatérve a példánkhoz:
 
 ```haskell
 -- kihagyjuk itt a definíciókat
